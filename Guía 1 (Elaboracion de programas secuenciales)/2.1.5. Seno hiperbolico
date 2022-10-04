@@ -1,0 +1,7 @@
+Algoritmo senoHiperbolico
+	Escribir 'Ingrese el valor de x'
+	Leer x
+	senh <- (exp(x) - exp(-x))/2
+	Escribir 'El seno hiperbolico es ', senh
+	
+FinAlgoritmo

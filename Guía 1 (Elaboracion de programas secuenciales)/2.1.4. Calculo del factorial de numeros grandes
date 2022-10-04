@@ -1,0 +1,7 @@
+Algoritmo calculoFactorialNumerosGrandes
+	Escribir 'Ingresar el numero'
+	Leer num
+	factorial <- rc(2*3.1415*num)*(num/2.718)^num
+	Escribir 'El factorial del numero es ', factorial
+	
+FinAlgoritmo

@@ -1,0 +1,38 @@
+Algoritmo formulaDeStokes
+	Escribir 'Ingrese el material para la esfera (H, A, C, P, V), radio y el fluido (A, G, B, C)'
+	Leer material, radio, fluido
+	Si ((material='H' O material='A' O material='C' O material='P' O material='V') Y (fluido='A' O fluido='G' O fluido='B' O fluido='C')) Entonces
+		Segun material Hacer
+			'H':
+				densidadEsfera <- 7.88
+			'A':
+				densidadEsfera <- 2.70
+			'C':
+				densidadEsfera <- 8.93
+			'P':
+				densidadEsfera <- 11.35
+			De Otro Modo:
+				densidadEsfera <- 19.34
+		FinSegun
+		Segun fluido Hacer
+			'A':
+				densidadFluido <- 1.0
+				viscosidad <- 0.00105
+			'G':
+				densidadFluido <- 1.26
+				viscosidad <- 1.3923
+			'B':
+				densidadFluido <- 0.88
+				viscosidad <- 0.000673
+			De Otro Modo:
+				densidadFluido <- 0.88
+				viscosidad <- 0.391
+		FinSegun
+		velocidad <- 2*radio*radio*9.81*(densidadEsfera-densidadFluido)/(9*viscosidad)
+		Fd <- 6*PI*radio*viscosidad*velocidad
+		Escribir 'La velocidad es: ', velocidad
+		Escribir 'La fuerza de friccion es: ', Fd
+	SiNo
+		Escribir 'Ingrese un material o fluido correcto'
+	FinSi
+FinAlgoritmo

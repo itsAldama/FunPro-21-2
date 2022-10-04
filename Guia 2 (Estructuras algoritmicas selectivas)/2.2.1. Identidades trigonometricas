@@ -1,0 +1,11 @@
+Algoritmo identidadesTrigonometricas
+	Escribir 'Ingrese el angulo en sexagesimal '
+	Leer angulo
+	anguloRad <- angulo*PI/180
+	Si (sen(2*anguloRad)=2*sen(anguloRad)*cos(anguloRad)) y (cos(2*anguloRad)=(cos(anguloRad)^2-sen(anguloRad)^2)) y (cos(2*anguloRad)=(1-2*sen(anguloRad)^2))
+		Escribir 'Se cumple la identidad sen(2x)=2sen(x)cos(x)'
+		Escribir 'Se cumple la identidad cos(2x)=cos^2(x)-sen^2(x)'
+		Escribir 'Se cumple la identidad cos(2x)=1-2sen^2(x)'
+		
+	FinSi
+FinAlgoritmo

@@ -1,0 +1,10 @@
+Algoritmo cuantoCuestaMatricula
+	Escribir 'Ingrese su costo de matricula, descuento y numero de ciclo que se encuenta: '
+	Leer costoMatricula, descuento, ciclo
+	Si ciclo>=5 Entonces
+		nuevoPago <- (100-descuento)/100*costoMatricula
+		Escribir 'Deberá pagar ', nuevoPago
+	SiNo
+		Escribir 'Deberá pagar ', costoMatricula
+	FinSi
+FinAlgoritmo

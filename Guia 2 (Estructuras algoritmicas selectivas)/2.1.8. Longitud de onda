@@ -1,0 +1,12 @@
+Algoritmo longitudOnda
+	Escribir 'Ingrese el medio en donde se propaga la nota musical'
+	Leer medioPropagacion
+	Si medioPropagacion='A' Entonces
+		longOnda <- 340/440
+		Escribir 'La longitud de onda es: ', longOnda, 'm'
+	FinSi
+	Si medioPropagacion='G' Entonces
+		longOnd <- 1400/440
+		Escribir 'La longitud de onda es: ', londOnda, 'm'
+	FinSi
+FinAlgoritmo
